@@ -1,1 +1,15 @@
 
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false
+security:
+  oauth2:
+    client:
+      clientId: sofmit-client
+      clientSecret: sofmit_secret
+      access-token-uri: http://localhost:9000/uac/oauth/token
+      user-authorization-uri: http://localhost:9000/uac/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9000/uac/user
+      jwt:
+        key-uri: http://localhost:9000/uac/oauth/token_key
