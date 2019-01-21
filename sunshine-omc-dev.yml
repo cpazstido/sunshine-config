@@ -13,3 +13,14 @@ security:
       user-info-uri: http://localhost:9000/uac/user
       jwt:
         key-uri: http://localhost:9000/uac/oauth/token_key
+sunshine:
+  oauth2:
+    client:
+      id: sunshine-resouce-uac
+      accessTokenUrl: http://localhost:9000/uac/oauth/token
+      clientId: sofmit-client
+      clientSecret: sofmit_secret
+      clientAuthenticationScheme: header
+      scope: select
+    resource:
+      user-info-uri: http://localhost:9000/uac/user
