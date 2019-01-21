@@ -4,13 +4,13 @@ zuul:
     uac-route:
       path: /uac/**
       sensitiveHeaders:
-      service-id: sunshine-uac
+      service-id: sunshine-provider-uac
     omc-route:
       path: /omc/**
-      service-id: sunshine-omc
+      service-id: sunshine-provider-omc
     pmc-route:
       path: /pmc/**
-      service-id: sunshine-pmc
+      service-id: sunshine-provider-pmc
 security:
   oauth2:
     client:
