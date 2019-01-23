@@ -24,3 +24,9 @@ sunshine:
       scope: select
     resource:
       user-info-uri: http://localhost:9000/uac/user
+hystrix:
+  threadpool:
+    default:
+      coreSize: 3
+      maxQueueSize: 2
+      queueSizeRejectionThreshold: 2
