@@ -11,6 +11,14 @@ zuul:
     pmc-route:
       path: /pmc/**
       service-id: sunshine-provider-pmc
+      ribbon:
+        eager-load:
+          enabled: true
+        MaxAutoRetries: 1
+        MaxAutoRetriesNextServer: 2
+        OkToRetryOnAllOperations: false
+        ConnectTimeout: 10000
+        ReadTimeout: 10000
   ratelimit:
     enabled: true
     key-prefix: sunshine
