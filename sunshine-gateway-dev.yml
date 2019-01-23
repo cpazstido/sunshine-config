@@ -3,6 +3,7 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
+  
   routes:
     uac-route:
       path: /uac/**
@@ -22,16 +23,6 @@ zuul:
         OkToRetryOnAllOperations: false
         ConnectTimeout: 10000
         ReadTimeout: 10000
-  ratelimit:
-    enabled: true
-    key-prefix: sunshine
-    repository: redis
-    default-policy:
-      type: origin
-      limit: 20
-      quota: 1000
-      refresh-interval: 2
-    behind-proxy: false
 security:
   oauth2:
     client:
