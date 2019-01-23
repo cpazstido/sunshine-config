@@ -1,8 +1,8 @@
 
 zuul:
-#   host:
-#     socket-timeout-millis: 60000
-#     connect-timeout-millis: 60000
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   routes:
     uac-route:
       path: /uac/**
