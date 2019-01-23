@@ -11,6 +11,16 @@ zuul:
     pmc-route:
       path: /pmc/**
       service-id: sunshine-provider-pmc
+  ratelimit:
+    enabled: true
+    key-prefix: sunshine
+    repository: redis
+    default-policy:
+      type: origin
+      limit: 20
+      quota: 1000
+      refresh-interval: 2
+    behind-proxy: false
 security:
   oauth2:
     client:
