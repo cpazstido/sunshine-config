@@ -12,3 +12,11 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
