@@ -11,14 +11,6 @@ zuul:
     omc-route:
       path: /omc/**
       service-id: sunshine-provider-omc
-      ribbon:
-        eager-load:
-          enabled: true
-        MaxAutoRetries: 1
-        MaxAutoRetriesNextServer: 2
-        OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
     pmc-route:
       path: /pmc/**
       service-id: sunshine-provider-pmc
