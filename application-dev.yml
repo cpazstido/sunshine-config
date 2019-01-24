@@ -1,6 +1,6 @@
 management:
   security:
-    enabled: true
+    enabled: false
 spring:
   redis:
     host: 127.0.0.1
